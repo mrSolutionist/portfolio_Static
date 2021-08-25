@@ -254,43 +254,41 @@
 
         <form class="row g-3" action="" id="form">
             <div class="col-md-6">
-                <label for="name" class="form-label">FIRST Name</label>
-                <input type="text" name="name" autocomplete="off" class="form-control name" onblur="blu(this)"
-                    id="fName">
-                <p id="error0"></p>
+              <label for="name" class="form-label">FIRST Name</label>
+              <input type="text" name="name" autocomplete="off" class="form-control name" onblur="blu(this)" id="fName">
+              <p id="error0"></p>
             </div>
             <div class="col-md-6">
-                <label for="name" class="form-label">LAST Name</label>
-                <input type="text" name="name" autocomplete="off" class="form-control name" onblur="blu(this)"
-                    id="lName">
-                <p id="error1"></p>
+              <label for="name" class="form-label">LAST Name</label>
+              <input type="text" name="name" autocomplete="off" class="form-control name" onblur="blu(this)" id="lName">
+              <p id="error1"></p>
             </div>
 
             <div class="col-md-6">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" name="email" autocomplete="off" onkeypress="return event.charCode != 32"
-                    onblur="EmlChk()" class="form-control" id="email">
-                <p id="error4"></p>
+              <label for="email" class="form-label">Email</label>
+              <input type="email" name="email" autocomplete="off" onkeypress="return event.charCode != 32"
+                onblur="EmlChk()" class="form-control" id="email">
+              <p id="error4"></p>
             </div>
 
             <div class="col-md-6">
-                <label for="num" class="form-label">Phone</label>
-                <input type="number" name="phone" autocomplete="off" class="form-control" onblur="NumChk()"
-                    oninput="this.value=this.value.replace(/[^\d]/,'');" id="num">
-                <p id="error3"></p>
+              <label for="num" class="form-label">Phone</label>
+              <input type="tel" name="phone" autocomplete="off" maxlength="10" class="form-control" 
+                oninput="this.value=this.value.replace(/[^\d]/,'');NumChk();" id="num">
+              <p id="error3"></p>
             </div>
 
             <div class="col-md-6 form-floating">
-                <label for="form-control" class="form-label">Submit your query</label>
-                <textarea class="form-control" name="comments" placeholder="Leave your query here"
-                    id="floatingTextarea"></textarea>
+              <label for="form-control" class="form-label">Submit your query</label>
+              <textarea class="form-control" name="comments" placeholder="Leave your query here"
+                id="floatingTextarea"></textarea>
 
             </div>
 
             <div class="col-12 text-center pt-2 pb-3">
-                <button id="btn" type="submit" class="btn btn-primary">SUBMIT</button>
+              <button id="btn" type="submit" class="btn btn-primary">SUBMIT</button>
             </div>
-        </form>
+          </form>
     </div>
     <div class="container-fluid bg-light text-center text-white" style="width: 100%; height:50%;">
         <div>
