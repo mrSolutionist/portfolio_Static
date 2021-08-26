@@ -178,20 +178,9 @@
         </div>
 
         <div class="row ">
-            <div class="col-md-6">
-                <div class="h-100 p-5 text-dark bg-light">
-                    <h2>Web apps<br> With Django</h2>
-                    <p style="text-align:justify">I make Web Apps with Django. Django is a
-                        high-level Python web framework that encourages rapid development and clean, pragmatic design.
-                        This helps me takes care of much of the hassle of web development, so I can focus on writing my
-                        app without needing to reinvent the wheel. A few of my projects that I have made are, <b>Trading
-                            app with Python, Static Website for GMR Spices,
-                            Global Medifile website for Medical Purposes. </p>
-                    <!-- <button class="btn btn-outline-light" type="button">Example button</button> -->
-                </div>
-            </div>
+          
             <div class="col-md-6 pt-5">
-                <div class="h-100 p-5 bg-light border ">
+                <div class="h-100 p-5 bg-light border border-primary ">
                     <h2>Mobile Apps <br> With Swift</h2>
                     <p style="text-align:justify">My mobile apps are built with Swift is a
                         powerful
@@ -202,7 +191,7 @@
                 </div>
             </div>
             <div class="col-md-6 pt-5">
-                <div class="h-100 p-5 bg-light ">
+                <div class="h-100 p-5 bg-light border border-warning ">
                     <h2>IOT And Automation</h2>
 
                     <p style="text-align:justify">I make basic automation with embedded and IOT.
@@ -214,6 +203,18 @@
                         identifiers (UIDs) and the ability to transfer data over a network without requiring
                         human-to-human or
                         human-to-computer interaction. This helps me build automation more easily and efficiently.</p>
+                </div>
+            </div>
+            <div class="col-md-6 pt-5">
+                <div class="h-100 p-5 text-dark bg-light border border-danger">
+                    <h2>Web apps<br> With Django</h2>
+                    <p style="text-align:justify">I make Web Apps with Django. Django is a
+                        high-level Python web framework that encourages rapid development and clean, pragmatic design.
+                        This helps me takes care of much of the hassle of web development, so I can focus on writing my
+                        app without needing to reinvent the wheel. A few of my projects that I have made are, <b>Trading
+                            app with Python, Static Website for GMR Spices,
+                            Global Medifile website for Medical Purposes. </p>
+                    <!-- <button class="btn btn-outline-light" type="button">Example button</button> -->
                 </div>
             </div>
 
@@ -352,7 +353,7 @@
             }
             else {
                 $("#error4").show();
-                $("#error4").text("Enter the valid email address");
+                $("#error4").addClass("text-danger").text("Enter the valid email address");
                 return false;
             }
 
