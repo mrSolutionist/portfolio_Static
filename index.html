@@ -387,7 +387,7 @@
 
             }
             else {
-                alert("You have entered invalid inputs")
+                pass
             }
 
         }
@@ -403,6 +403,12 @@
             }
 
         });
+
+        $(function() {
+  $(document).click(function (event) {
+    $('.navbar-collapse').collapse('hide');
+  });
+});
 
             // $("name").on({
             //   keydown: function (e) {
